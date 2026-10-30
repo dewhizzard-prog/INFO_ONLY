@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>ManLikeWales@40 — Master Logistics Dashboard</title>
+  <title>ManLikeWales@40 — Expedition Knowledge Base</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <style>
@@ -33,20 +33,8 @@
             <h1 class="text-base sm:text-xl font-extrabold tracking-tight text-white flex items-center gap-1.5 sm:gap-2">
               ManLikeWales@40 <span class="bg-blue-500/10 text-blue-400 text-[10px] sm:text-xs px-2 py-0.5 rounded-full border border-blue-500/20 font-semibold hidden sm:inline-block">Operation 4 for 40</span>
             </h1>
-            <p class="text-[11px] sm:text-xs text-slate-400">4 Countries • Jul 06–20, 2027 • Live Logistics</p>
+            <p class="text-[11px] sm:text-xs text-slate-400">4 Countries • Jul 06–20, 2027 • Information Hub</p>
           </div>
-        </div>
-
-        <!-- MOBILE CURRENCY TOGGLE -->
-        <div class="md:hidden flex items-center bg-slate-800/90 rounded-lg p-1 border border-slate-700">
-          <select id="currencySelectorMobile" onchange="changeCurrency(this.value)" class="bg-slate-900 text-blue-400 font-bold text-xs rounded px-2 py-1 border border-slate-700 focus:outline-none">
-            <option value="AUD">AUD ($)</option>
-            <option value="USD">USD ($)</option>
-            <option value="CAD">CAD ($)</option>
-            <option value="GBP">GBP (£)</option>
-            <option value="CHF">CHF (Fr)</option>
-            <option value="NGN">NGN (₦)</option>
-          </select>
         </div>
       </div>
 
@@ -82,42 +70,20 @@
         </div>
       </div>
 
-      <!-- DESKTOP CURRENCY TOGGLE -->
-      <div class="hidden md:flex items-center bg-slate-800/90 rounded-xl p-1.5 border border-slate-700/60 shadow-inner">
-        <span class="text-xs font-semibold text-slate-400 px-2.5 flex items-center gap-1.5">
-          <i class="fa-solid fa-coins text-amber-400"></i> Currency:
-        </span>
-        <select id="currencySelector" onchange="changeCurrency(this.value)" class="bg-slate-900 text-blue-400 font-bold text-xs sm:text-sm rounded-lg px-2.5 py-1 border border-slate-700 focus:outline-none focus:border-blue-500 cursor-pointer">
-          <option value="AUD">AUD ($)</option>
-          <option value="USD">USD ($)</option>
-          <option value="CAD">CAD ($)</option>
-          <option value="GBP">GBP (£)</option>
-          <option value="CHF">CHF (Fr)</option>
-          <option value="NGN">NGN (₦)</option>
-        </select>
-      </div>
-
     </div>
   </header>
 
   <!-- MAIN CONTAINER -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8 space-y-6 sm:space-y-8">
 
-    <!-- TOP METRICS GRID -->
+    <!-- TOP METRICS GRID (INFO ONLY) -->
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
       
-      <div onclick="openTravelersModal()" class="glass-card glass-card-hover p-3.5 sm:p-5 rounded-2xl cursor-pointer group relative overflow-hidden">
-        <div class="flex justify-between items-start mb-1 sm:mb-2">
-          <span class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider">Active Travelers</span>
-          <span class="bg-blue-500/20 text-blue-400 text-[9px] sm:text-[10px] font-extrabold px-1.5 py-0.5 rounded-full">
-            Tickets
-          </span>
-        </div>
-        <div class="text-xl sm:text-3xl font-black text-white group-hover:text-blue-400 transition-colors flex flex-wrap items-baseline gap-1 sm:gap-2">
-          16 Guests <span class="text-[10px] sm:text-xs font-bold text-emerald-400">(4 Locked)</span>
-        </div>
+      <div class="glass-card p-3.5 sm:p-5 rounded-2xl">
+        <div class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 sm:mb-2">Expedition Scope</div>
+        <div class="text-xl sm:text-3xl font-black text-white">4 Countries</div>
         <p class="text-[10px] sm:text-xs text-slate-400 mt-1 flex items-center gap-1">
-          <i class="fa-solid fa-users text-blue-400 text-[10px]"></i> View roster status
+          <i class="fa-solid fa-earth-africa text-blue-400 text-[10px]"></i> East Africa Tour
         </p>
       </div>
 
@@ -130,18 +96,18 @@
       </div>
 
       <div class="glass-card p-3.5 sm:p-5 rounded-2xl">
-        <div class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 sm:mb-2">Total Units Booked</div>
-        <div class="text-xl sm:text-3xl font-black text-emerald-400">29 Units</div>
+        <div class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 sm:mb-2">Key Locations</div>
+        <div class="text-xl sm:text-3xl font-black text-emerald-400">Kigali • Kampala</div>
         <p class="text-[10px] sm:text-xs text-slate-400 mt-1 flex items-center gap-1">
-          <i class="fa-solid fa-building text-emerald-400 text-[10px]"></i> 4-Country Properties
+          <i class="fa-solid fa-location-dot text-emerald-400 text-[10px]"></i> Dar es Salaam • Nairobi
         </p>
       </div>
 
       <div class="glass-card p-3.5 sm:p-5 rounded-2xl">
-        <div class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 sm:mb-2">Capacity Gaps</div>
-        <div class="text-xl sm:text-3xl font-black text-emerald-400">0 Gaps</div>
+        <div class="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-wider mb-1 sm:mb-2">Expedition Status</div>
+        <div class="text-xl sm:text-3xl font-black text-blue-400">Confirmed</div>
         <p class="text-[10px] sm:text-xs text-slate-400 mt-1 flex items-center gap-1">
-          <i class="fa-solid fa-circle-check text-emerald-400 text-[10px]"></i> All 4 Legs Covered
+          <i class="fa-solid fa-circle-check text-blue-400 text-[10px]"></i> All Legs Locked In
         </p>
       </div>
     </div>
@@ -167,75 +133,7 @@
       <!-- Dynamic JS Content Injected Here -->
     </div>
 
-    <!-- MASTER GUEST ACCOMMODATION MATRIX & SUMMARY (WITH HORIZONTAL CASCADE VIEW) -->
-    <section class="glass-card p-4 sm:p-6 rounded-2xl space-y-4">
-      <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 border-b border-slate-800 pb-4">
-        <div class="flex justify-between items-center w-full lg:w-auto">
-          <div>
-            <h2 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
-              <i class="fa-solid fa-users-rectangle text-blue-400"></i> Master Guest Cost & Allocation Summary
-            </h2>
-            <p class="text-[11px] sm:text-xs text-slate-400">Individual accommodation totals and room allocations per guest</p>
-          </div>
-          
-          <!-- VIEW TOGGLE BUTTON (CARDS CASCADE VS TABLE) -->
-          <div class="flex bg-slate-900 p-1 rounded-lg border border-slate-800 text-[11px] font-bold">
-            <button onclick="setRosterView('cards')" id="view-cards-btn" class="px-2.5 py-1 rounded-md bg-blue-600 text-white flex items-center gap-1">
-              <i class="fa-solid fa-grip-vertical text-[10px]"></i> Cascade
-            </button>
-            <button onclick="setRosterView('table')" id="view-table-btn" class="px-2.5 py-1 rounded-md text-slate-400 hover:text-white flex items-center gap-1">
-              <i class="fa-solid fa-table text-[10px]"></i> Table
-            </button>
-          </div>
-        </div>
-
-        <!-- MULTI-ATTRIBUTE FILTERS -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 w-full lg:w-auto">
-          <select id="countryFilter" onchange="filterRoster()" class="bg-slate-900 border border-slate-700 text-xs text-blue-400 font-bold rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500 cursor-pointer w-full">
-            <option value="all">🌍 All Countries</option>
-            <option value="rwanda">🇷🇼 Rwanda (Kigali)</option>
-            <option value="uganda">🇺🇬 Uganda (Kampala)</option>
-            <option value="tanzania">🇹🇿 Tanzania (Dar es Salaam)</option>
-            <option value="kenya">🇰🇪 Kenya (Nairobi)</option>
-          </select>
-
-          <input type="text" id="accomSearch" onkeyup="filterRoster()" placeholder="Search property..." class="bg-slate-900 border border-slate-700 text-xs text-white rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500 w-full">
-
-          <input type="text" id="rosterSearch" onkeyup="filterRoster()" placeholder="Search guest name..." class="bg-slate-900 border border-slate-700 text-xs text-white rounded-lg px-3 py-2 focus:outline-none focus:border-blue-500 w-full">
-        </div>
-      </div>
-
-      <!-- VIEW 1: CASCADE VIEW (HORIZONTAL SWIPEABLE CARDS) -->
-      <div id="rosterCardsContainer" class="flex overflow-x-auto gap-4 pb-4 pt-1 no-scrollbar snap-x touch-pan-x">
-        <!-- JS Populated Guest Cards -->
-      </div>
-
-      <!-- VIEW 2: TRADITIONAL TABLE WITH HORIZONTAL SCROLL -->
-      <div id="rosterTableContainer" class="hidden overflow-x-auto rounded-xl border border-slate-800/80 no-scrollbar touch-pan-x">
-        <div class="min-w-[800px]">
-          <table class="w-full text-left text-xs text-slate-300" id="rosterTable">
-            <thead class="bg-slate-900 text-slate-400 uppercase text-[10px] font-bold tracking-wider">
-              <tr>
-                <th class="p-3">Guest</th>
-                <th class="p-3">Ticket Status</th>
-                <th class="p-3">🇷🇼 Kigali</th>
-                <th class="p-3">🇺🇬 Kampala</th>
-                <th class="p-3">🇹🇿 Dar es Salaam</th>
-                <th class="p-3">🇰🇪 Nairobi</th>
-                <th class="p-3 text-right">Est. Total Cost</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-slate-800/60 font-medium" id="matrixTableBody">
-              <!-- JS Populated Table -->
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <p class="text-[10px] sm:text-[11px] text-slate-500 italic">*Excludes unassigned or self-sorting legs where room bookings are handled independently or pending unit confirmation.</p>
-    </section>
-
-    <!-- REIMAGINED GALLERY SECTION (SEPARATED ROWS FOR ITINERARY & SIDE QUESTS WITH DRIVE LINKS INTEGRATED) -->
+    <!-- REIMAGINED GALLERY SECTION (ITINERARY & SIDE QUESTS) -->
     <section class="glass-card p-4 sm:p-6 rounded-2xl space-y-6">
       <div class="border-b border-slate-800 pb-4">
         <h2 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
@@ -432,34 +330,6 @@
 
   </main>
 
-  <!-- TRAVELERS MODAL -->
-  <div id="travelersModal" class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
-    <div class="glass-card max-w-2xl w-full rounded-2xl border border-slate-700 p-4 sm:p-6 space-y-4 sm:space-y-6 relative max-h-[90vh] overflow-y-auto">
-      <button onclick="closeTravelersModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 pr-6">
-        <div>
-          <h3 class="text-lg sm:text-xl font-bold text-white flex items-center gap-2">
-            <i class="fa-solid fa-users text-blue-400"></i> Active Traveler Roster (16)
-          </h3>
-          <p class="text-[11px] sm:text-xs text-slate-400">Track flight ticket purchases and room allocations</p>
-        </div>
-        
-        <div class="flex bg-slate-900 p-1 rounded-lg border border-slate-800 text-[10px] sm:text-[11px] font-bold">
-          <button onclick="filterTravelers('all')" id="filter-all" class="px-2 py-1 rounded-md bg-blue-600 text-white">All</button>
-          <button onclick="filterTravelers('locked')" id="filter-locked" class="px-2 py-1 rounded-md text-slate-400 hover:text-white">🔒 Locked</button>
-          <button onclick="filterTravelers('pending')" id="filter-pending" class="px-2 py-1 rounded-md text-slate-400 hover:text-white">⏳ Pending</button>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3" id="modalTravelerList">
-        <!-- JS Injected List -->
-      </div>
-    </div>
-  </div>
-
   <script>
     // COUNTDOWN LOGIC
     function updateCountdown() {
@@ -494,46 +364,19 @@
     setInterval(updateCountdown, 1000);
     updateCountdown();
 
-    // CURRENCY CONVERSION RATES
-    const fxRates = { AUD: 1.0, USD: 0.694, CAD: 0.986, GBP: 0.524, CHF: 0.576, NGN: 923.23 };
-    const fxSymbols = { AUD: '$', USD: '$', CAD: '$', GBP: '£', CHF: 'Fr', NGN: '₦' };
-    let currentFX = 'AUD';
-    let currentRosterView = 'cards';
-
-    // ACTIVE TRAVELERS DATA (LATEST REASSIGNED ROOMS & COSTS IN AUD)
-    const activeTravelers = [
-      { name: "Adewale", ticket: "locked", legs: "All 4 Countries", rwanda: "Kigali 4-BR Unit", uganda: "Kololo Unit 1", tanzania: "DSM Unit 1", kenya: "Pendo Unit 1", costAud: 1605 },
-      { name: "Sheriff", ticket: "locked", legs: "All 4 Countries", rwanda: "Avaia Villa (BR 2)", uganda: "Kololo Unit 2", tanzania: "DSM Unit 1", kenya: "Pendo Unit 3", costAud: 1605 },
-      { name: "Dayo", ticket: "locked", legs: "All 4 Countries", rwanda: "Kigali 4-BR Unit", uganda: "Self-Sorting", tanzania: "Self-Sorting", kenya: "Self-Sorting", costAud: 400 },
-      { name: "Bolaji", ticket: "locked", legs: "All 4 Countries", rwanda: "Kigali 4-BR Unit", uganda: "Self-Sorting", tanzania: "Self-Sorting", kenya: "Self-Sorting", costAud: 400 },
-      { name: "Akeem", ticket: "pending", legs: "All 4 Countries", rwanda: "Avaia Villa (BR 3)", uganda: "Kololo Unit 1 (Host)", tanzania: "DSM Unit 1", kenya: "Pendo Unit 2", costAud: 1605 },
-      { name: "Nick", ticket: "pending", legs: "All 4 Countries", rwanda: "Kigali Block (BR 1)", uganda: "Kololo Unit 2", tanzania: "DSM Unit 2", kenya: "Pendo Unit 7", costAud: 1535 },
-      { name: "Anthony", ticket: "pending", legs: "All 4 Countries", rwanda: "Kigali 4-BR Unit", uganda: "Kololo Unit 3", tanzania: "DSM Unit 3", kenya: "Pendo Unit 4", costAud: 1605 },
-      { name: "Charles", ticket: "pending", legs: "All 4 Countries", rwanda: "Kigali Block (BR 2)", uganda: "Kololo Unit 3", tanzania: "DSM Unit 2", kenya: "Pendo Unit 6", costAud: 1535 },
-      { name: "Olumide", ticket: "pending", legs: "Uganda, Tanzania, Kenya", rwanda: "—", uganda: "Kololo Unit 4", tanzania: "DSM Unit 4", kenya: "Pendo Unit 5", costAud: 1205 },
-      { name: "Saheed", ticket: "pending", legs: "Tanzania, Kenya", rwanda: "—", uganda: "—", tanzania: "DSM Unit 2", kenya: "Pendo Unit 8", costAud: 970 },
-      { name: "Pikezer Eze", ticket: "pending", legs: "Tanzania, Kenya", rwanda: "—", uganda: "—", tanzania: "DSM Unit 4", kenya: "Pendo Unit 9", costAud: 970 },
-      { name: "Chuka", ticket: "pending", legs: "Tanzania, Kenya", rwanda: "—", uganda: "—", tanzania: "DSM Unit 3", kenya: "Pendo Unit 10", costAud: 970 },
-      { name: "Ernest", ticket: "pending", legs: "Tanzania, Kenya", rwanda: "—", uganda: "—", tanzania: "DSM Unit 3", kenya: "Pendo Unit 11", costAud: 970 },
-      { name: "Dilligaf", ticket: "pending", legs: "Rwanda, Uganda, Tanzania", rwanda: "Avaia Villa (BR 3)", uganda: "Kololo Unit 4", tanzania: "DSM Unit 4", kenya: "Excluded", costAud: 985 },
-      { name: "Toyeeb", ticket: "pending", legs: "All 4 Countries", rwanda: "Kigali Block (BR 3)", uganda: "Kololo Unit 5", tanzania: "DSM Unit 4", kenya: "Pendo Unit 12", costAud: 1535 },
-      { name: "Fulloption", ticket: "pending", legs: "All 4 Countries", rwanda: "Unassigned", uganda: "Kololo Unit 5 (Open)", tanzania: "Standby", kenya: "Unassigned", costAud: 0 },
-      { name: "Niyi", ticket: "pending", legs: "Tanzania, Kenya", rwanda: "—", uganda: "—", tanzania: "Standby", kenya: "Unassigned", costAud: 0 }
-    ];
-
-    // COUNTRY DATA MATRIX WITH VISAS & LINKS
+    // COUNTRY DATA MATRIX (INFO ONLY - NO PRICES/COSTS)
     const countryData = {
       rwanda: {
         flag: "🇷🇼", name: "Rwanda (Kigali)", dates: "Jul 06 – Jul 09 (3 Nights)",
-        statusTag: "Fully Booked (10 BR Confirmed)", statusClass: "bg-emerald-500/20 text-emerald-400",
+        statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400",
         properties: [
-          { name: "Avaia - Private Residence", link: "https://www.airbnb.com.au/rooms/1611457630423220239", guests: ["Sheriff 🔒", "Akeem ⏳", "Dilligaf ⏳"], audPp: 400 },
-          { name: "Kigali Combined Block (3 BR)", link: "https://www.airbnb.com.au/rooms/1742683478719031917", guests: ["Nick ⏳", "Charles ⏳", "Toyeeb ⏳"], audPp: 330 },
-          { name: "4-Bedroom Unit ($1,600 AUD Total)", link: "https://www.airbnb.com.au/rooms/1446485293192029182?source_impression_id=p3_1792496178_P3b0dQHSuSKtEUe_", guests: ["Adewale 🔒", "Dayo 🔒", "Bolaji 🔒", "Anthony ⏳"], audPp: 400 }
+          { name: "Avaia - Private Residence", link: "https://www.airbnb.com.au/rooms/1611457630423220239", guests: ["Sheriff", "Akeem", "Dilligaf"] },
+          { name: "Kigali Combined Block (3 BR)", link: "https://www.airbnb.com.au/rooms/1742683478719031917", guests: ["Nick", "Charles", "Toyeeb"] },
+          { name: "4-Bedroom Residence Unit", link: "https://www.airbnb.com.au/rooms/1446485293192029182", guests: ["Adewale", "Dayo", "Bolaji", "Anthony"] }
         ],
         visas: [
-          { title: "Commonwealth / AU / Francophonie Waiver", cost: "$0 USD ($0 AUD)", link: "https://www.irembo.gov.rw/", desc: "Free 30-day visa on arrival for Australian, UK, Canadian, Nigerian, & Swiss passport holders." },
-          { title: "Standard Visa on Arrival", cost: "$50 USD (~$72 AUD)", link: "https://www.irembo.gov.rw/", desc: "Available at Kigali Airport for all non-exempt passport holders." }
+          { title: "Commonwealth / AU / Francophonie Waiver", cost: "Exempt (Free)", link: "https://www.irembo.gov.rw/", desc: "Free 30-day visa on arrival for eligible passport holders." },
+          { title: "Standard Visa on Arrival", cost: "Standard Fee", link: "https://www.irembo.gov.rw/", desc: "Available at Kigali Airport for non-exempt visitors." }
         ],
         games: [
           { title: "Kigali Go-Kart Time Trial 🏎️", category: "Go-Karting", points: "25 Pts", desc: "Round 1 qualifier time trials at Kigali Karting track." },
@@ -554,13 +397,13 @@
       },
       uganda: {
         flag: "🇺🇬", name: "Uganda (Kampala)", dates: "Jul 09 – Jul 12 (3 Nights)",
-        statusTag: "Fully Booked (5 Units Confirmed)", statusClass: "bg-emerald-500/20 text-emerald-400",
+        statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400",
         properties: [
-          { name: "Kololo 2-Bedroom Apartment Block (5 Units Booked)", link: "https://www.airbnb.com.au/rooms/992772718929728730", guests: ["Unit 1 (Booked via Akeem's Airbnb): Adewale 🔒 & Akeem ⏳", "Unit 2: Sheriff 🔒 & Nick ⏳", "Unit 3: Charles ⏳ & Anthony ⏳", "Unit 4: Olumide ⏳ & Dilligaf ⏳", "Unit 5: Toyeeb ⏳ & Open / Fulloption ⏳"], audPp: 235 }
+          { name: "Kololo 2-Bedroom Apartment Block", link: "https://www.airbnb.com.au/rooms/992772718929728730", guests: ["Unit 1: Adewale & Akeem", "Unit 2: Sheriff & Nick", "Unit 3: Charles & Anthony", "Unit 4: Olumide & Dilligaf", "Unit 5: Toyeeb & Open"] }
         ],
         visas: [
-          { title: "Mandatory Single-Entry e-Visa", cost: "$50 USD (~$72 AUD)", link: "https://visas.immigration.go.ug/", desc: "Must apply online 4–6 weeks in advance. No visas issued on arrival at Entebbe Airport." },
-          { title: "Yellow Fever Health Clearance", cost: "Mandatory Card", link: "#", desc: "Physical Yellow Card strictly verified by health officials upon landing." }
+          { title: "Mandatory Single-Entry e-Visa", cost: "Advance Application Required", link: "https://visas.immigration.go.ug/", desc: "Must apply online 4–6 weeks in advance. No visas issued on arrival at Entebbe Airport." },
+          { title: "Yellow Fever Health Clearance", cost: "Required Health Record", link: "#", desc: "Physical Yellow Card strictly verified by health officials upon landing." }
         ],
         games: [
           { title: "Kampala Go-Kart Grand Prix 🏎️", category: "Go-Karting", points: "35 Pts", desc: "Round 2 championship sprint race with podium trophies." },
@@ -580,13 +423,13 @@
       },
       tanzania: {
         flag: "🇹🇿", name: "Tanzania (Dar es Salaam)", dates: "Jul 12 – Jul 15 (3 Nights)",
-        statusTag: "Fully Booked (13 BR Confirmed)", statusClass: "bg-emerald-500/20 text-emerald-400",
+        statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400",
         properties: [
-          { name: "Dar es Salaam Apartments (3x 3-BR + 1x 4-BR)", link: "https://www.airbnb.com.au/rooms/1174483643076432401", guests: ["Unit 1 (3 BR): Adewale 🔒, Akeem ⏳, Sheriff 🔒", "Unit 2 (3 BR): Saheed ⏳, Nick ⏳, Charles ⏳", "Unit 3 (3 BR): Ernest ⏳, Chuka ⏳, Anthony ⏳", "Unit 4 (4 BR): Olumide ⏳, Pikezer Eze ⏳, Dilligaf ⏳, Toyeeb ⏳", "*Standby (Undecided): Niyi ⏳, Fulloption ⏳*"], audPp: 350 }
+          { name: "Dar es Salaam Apartments (3x 3-BR + 1x 4-BR)", link: "https://www.airbnb.com.au/rooms/1174483643076432401", guests: ["Unit 1: Adewale, Akeem, Sheriff", "Unit 2: Saheed, Nick, Charles", "Unit 3: Ernest, Chuka, Anthony", "Unit 4: Olumide, Pikezer Eze, Dilligaf, Toyeeb"] }
         ],
         visas: [
-          { title: "Tanzania Single-Entry e-Visa", cost: "$50 USD (~$72 AUD)", link: "https://visa.immigration.go.tz/", desc: "Apply online 3–4 weeks prior to bypass arrival queues at Dar Airport." },
-          { title: "Mandatory Inbound Travel Insurance", cost: "$44 USD (~$63 AUD)", link: "https://visittanzania.nicinsurance.co.tz/", desc: "Mandatory policy required for all visitors before crossing border control." }
+          { title: "Tanzania Single-Entry e-Visa", cost: "Advance Online Application", link: "https://visa.immigration.go.tz/", desc: "Apply online 3–4 weeks prior to bypass arrival queues at Dar Airport." },
+          { title: "Mandatory Inbound Travel Insurance", cost: "Required Policy", link: "https://visittanzania.nicinsurance.co.tz/", desc: "Mandatory policy required for all visitors before crossing border control." }
         ],
         games: [
           { title: "Dar Coastal Go-Kart Showdown 🏎️", category: "Go-Karting", points: "30 Pts", desc: "Round 3 coastal track showdown near Slipway." },
@@ -606,12 +449,12 @@
       },
       kenya: {
         flag: "🇰🇪", name: "Kenya (Nairobi)", dates: "Jul 15 – Jul 20 (5 Nights)",
-        statusTag: "Surplus (+8 Units Open)", statusClass: "bg-blue-500/20 text-blue-400",
+        statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400",
         properties: [
-          { name: "Pendo Luxury Apartments (20 Private 1-BR Units Booked)", link: "https://www.booking.com/Share-iKgwBd", guests: ["Assigned (12): Adewale 🔒, Akeem ⏳, Sheriff 🔒, Anthony ⏳, Olumide ⏳, Charles 🔒, Nick 🔒, Saheed ⏳, Pikezer Eze ⏳, Chuka ⏳, Ernest ⏳, Toyeeb ⏳", "Unassigned / Surplus (8 Units Open): Niyi ⏳, Fulloption ⏳ (+6 Spare Units Open)"], audPp: 620 }
+          { name: "Pendo Luxury Apartments (20 Private Units)", link: "https://www.booking.com/Share-iKgwBd", guests: ["Assigned: Adewale, Akeem, Sheriff, Anthony, Olumide, Charles, Nick, Saheed, Pikezer Eze, Chuka, Ernest, Toyeeb"] }
         ],
         visas: [
-          { title: "Kenya Electronic Travel Authorization (eTA)", cost: "~$30 USD (~$43 AUD)", link: "https://www.etakenya.go.ke/", desc: "Apply online 7–10 days before landing in Nairobi." }
+          { title: "Kenya Electronic Travel Authorization (eTA)", cost: "Online Application", link: "https://www.etakenya.go.ke/", desc: "Apply online 7–10 days before landing in Nairobi." }
         ],
         games: [
           { title: "Nairobi Go-Kart Grand Final 🏎️", category: "Go-Karting", points: "50 Pts (Double)", desc: "The ultimate tour championship decider at GP Karting / Two Rivers." },
@@ -636,151 +479,6 @@
 
     let activeSubtabs = { rwanda: 'rooms', uganda: 'rooms', tanzania: 'rooms', kenya: 'rooms' };
 
-    function renderMatrixView() {
-      const rate = fxRates[currentFX];
-      const symbol = fxSymbols[currentFX];
-
-      // 1. RENDER GUEST CARDS (CASCADE VIEW WITH HORIZONTAL SCROLL)
-      const cardsContainer = document.getElementById('rosterCardsContainer');
-      cardsContainer.innerHTML = activeTravelers.map(t => {
-        const ticketBadge = t.ticket === 'locked' 
-          ? `<span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-emerald-500/30 flex items-center gap-1"><i class="fa-solid fa-lock text-[8px]"></i> Locked</span>`
-          : `<span class="bg-amber-500/20 text-amber-400 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-amber-500/30 flex items-center gap-1"><i class="fa-solid fa-clock text-[8px]"></i> Pending</span>`;
-
-        const convertedCost = t.costAud > 0 
-          ? `${symbol}${(t.costAud * rate).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})} ${currentFX}`
-          : (t.rwanda === 'Self-Sorting' ? 'Self-Sorted' : 'Pending');
-
-        return `
-          <div class="glass-card p-4 rounded-xl space-y-3 min-w-[280px] sm:min-w-[320px] snap-start flex-shrink-0" data-guest="${t.name.toLowerCase()}" data-rwanda="${t.rwanda.toLowerCase()}" data-uganda="${t.uganda.toLowerCase()}" data-tanzania="${t.tanzania.toLowerCase()}" data-kenya="${t.kenya.toLowerCase()}">
-            <div class="flex justify-between items-center border-b border-slate-800 pb-2">
-              <div>
-                <h4 class="font-bold text-white text-sm">${t.name}</h4>
-                <span class="text-[10px] text-slate-400">${t.legs}</span>
-              </div>
-              ${ticketBadge}
-            </div>
-
-            <!-- COUNTRY ROOM ALLOCATION BREAKDOWN -->
-            <div class="grid grid-cols-2 gap-2 text-[11px]">
-              <div class="bg-slate-900/60 p-2 rounded-lg border border-slate-800">
-                <span class="text-[9px] text-slate-400 font-bold block uppercase">🇷🇼 Kigali</span>
-                <span class="font-semibold ${t.rwanda.includes('Avaia') || t.rwanda.includes('Block') || t.rwanda.includes('4-BR') ? 'text-emerald-400' : 'text-slate-300'}">${t.rwanda}</span>
-              </div>
-              <div class="bg-slate-900/60 p-2 rounded-lg border border-slate-800">
-                <span class="text-[9px] text-slate-400 font-bold block uppercase">🇺🇬 Kampala</span>
-                <span class="font-semibold ${t.uganda.includes('Kololo') ? 'text-emerald-400' : 'text-slate-300'}">${t.uganda}</span>
-              </div>
-              <div class="bg-slate-900/60 p-2 rounded-lg border border-slate-800">
-                <span class="text-[9px] text-slate-400 font-bold block uppercase">🇹🇿 Dar es Salaam</span>
-                <span class="font-semibold ${t.tanzania.includes('DSM') ? 'text-emerald-400' : 'text-slate-300'}">${t.tanzania}</span>
-              </div>
-              <div class="bg-slate-900/60 p-2 rounded-lg border border-slate-800">
-                <span class="text-[9px] text-slate-400 font-bold block uppercase">🇰🇪 Nairobi</span>
-                <span class="font-semibold ${t.kenya.includes('Pendo') ? 'text-emerald-400' : 'text-slate-300'}">${t.kenya}</span>
-              </div>
-            </div>
-
-            <!-- EST COST FOOTER -->
-            <div class="pt-2 border-t border-slate-800 flex justify-between items-center text-xs">
-              <span class="text-slate-400 font-medium">Est. Accom Total:</span>
-              <span class="font-bold text-blue-400">${convertedCost}</span>
-            </div>
-          </div>
-        `;
-      }).join('');
-
-      // 2. RENDER TRADITIONAL TABLE (FOR TABLE VIEW)
-      const tbody = document.getElementById('matrixTableBody');
-      tbody.innerHTML = activeTravelers.map(t => {
-        const ticketBadge = t.ticket === 'locked' 
-          ? `<span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-emerald-500/30 flex items-center gap-1 w-fit"><i class="fa-solid fa-lock text-[9px]"></i> Locked IN</span>`
-          : `<span class="bg-amber-500/20 text-amber-400 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-amber-500/30 flex items-center gap-1 w-fit"><i class="fa-solid fa-clock text-[9px]"></i> Pending</span>`;
-
-        const convertedCost = t.costAud > 0 
-          ? `${symbol}${(t.costAud * rate).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})} ${currentFX}`
-          : (t.rwanda === 'Self-Sorting' ? 'Self-Sorted' : 'Pending Allocation');
-
-        return `
-          <tr data-guest="${t.name.toLowerCase()}" data-rwanda="${t.rwanda.toLowerCase()}" data-uganda="${t.uganda.toLowerCase()}" data-tanzania="${t.tanzania.toLowerCase()}" data-kenya="${t.kenya.toLowerCase()}">
-            <td class="p-3 font-bold text-white whitespace-nowrap">${t.name}</td>
-            <td class="p-3 whitespace-nowrap">${ticketBadge}</td>
-            <td class="p-3 whitespace-nowrap ${t.rwanda.includes('Avaia') || t.rwanda.includes('Block') || t.rwanda.includes('4-BR') ? 'text-emerald-400' : (t.rwanda === 'Self-Sorting' ? 'text-slate-400 italic' : (t.rwanda === '—' ? 'text-slate-600' : 'text-amber-400'))}">${t.rwanda}</td>
-            <td class="p-3 whitespace-nowrap ${t.uganda.includes('Kololo') ? 'text-emerald-400' : (t.uganda === 'Self-Sorting' ? 'text-slate-400 italic' : (t.uganda === '—' ? 'text-slate-600' : 'text-amber-400'))}">${t.uganda}</td>
-            <td class="p-3 whitespace-nowrap ${t.tanzania.includes('DSM') ? 'text-emerald-400' : (t.tanzania === 'Self-Sorting' ? 'text-slate-400 italic' : (t.tanzania === '—' ? 'text-slate-600' : 'text-amber-400'))}">${t.tanzania}</td>
-            <td class="p-3 whitespace-nowrap ${t.kenya.includes('Pendo') ? 'text-emerald-400' : (t.kenya === 'Self-Sorting' ? 'text-slate-400 italic' : (t.kenya === 'Excluded' ? 'text-rose-500/60 font-normal' : 'text-amber-400'))}">${t.kenya}</td>
-            <td class="p-3 text-right whitespace-nowrap font-bold text-blue-400" data-aud="${t.costAud}">${convertedCost}</td>
-          </tr>
-        `;
-      }).join('');
-    }
-
-    function setRosterView(view) {
-      currentRosterView = view;
-      const cardsBtn = document.getElementById('view-cards-btn');
-      const tableBtn = document.getElementById('view-table-btn');
-      const cardsContainer = document.getElementById('rosterCardsContainer');
-      const tableContainer = document.getElementById('rosterTableContainer');
-
-      if (view === 'cards') {
-        cardsBtn.className = "px-2.5 py-1 rounded-md bg-blue-600 text-white flex items-center gap-1";
-        tableBtn.className = "px-2.5 py-1 rounded-md text-slate-400 hover:text-white flex items-center gap-1";
-        cardsContainer.classList.remove('hidden');
-        tableContainer.classList.add('hidden');
-      } else {
-        tableBtn.className = "px-2.5 py-1 rounded-md bg-blue-600 text-white flex items-center gap-1";
-        cardsBtn.className = "px-2.5 py-1 rounded-md text-slate-400 hover:text-white flex items-center gap-1";
-        tableContainer.classList.remove('hidden');
-        cardsContainer.classList.add('hidden');
-      }
-    }
-
-    function filterRoster() {
-      const guestQ = document.getElementById('rosterSearch').value.toLowerCase().trim();
-      const accomQ = document.getElementById('accomSearch').value.toLowerCase().trim();
-      const countryQ = document.getElementById('countryFilter').value;
-
-      // Filter Cards View
-      document.querySelectorAll('#rosterCardsContainer > div').forEach(card => {
-        const guestName = card.getAttribute('data-guest') || '';
-        const rwanda = card.getAttribute('data-rwanda') || '';
-        const uganda = card.getAttribute('data-uganda') || '';
-        const tanzania = card.getAttribute('data-tanzania') || '';
-        const kenya = card.getAttribute('data-kenya') || '';
-
-        const matchesGuest = guestName.includes(guestQ);
-        const matchesAccom = accomQ === '' || rwanda.includes(accomQ) || uganda.includes(accomQ) || tanzania.includes(accomQ) || kenya.includes(accomQ);
-
-        let matchesCountry = true;
-        if (countryQ === 'rwanda') matchesCountry = rwanda !== '—' && rwanda !== '';
-        else if (countryQ === 'uganda') matchesCountry = uganda !== '—' && uganda !== '';
-        else if (countryQ === 'tanzania') matchesCountry = tanzania !== '—' && tanzania !== '';
-        else if (countryQ === 'kenya') matchesCountry = kenya !== '—' && kenya !== '' && !kenya.includes('excluded');
-
-        card.style.display = (matchesGuest && matchesAccom && matchesCountry) ? '' : 'none';
-      });
-
-      // Filter Table View
-      document.querySelectorAll('#matrixTableBody tr').forEach(row => {
-        const guestName = row.getAttribute('data-guest') || '';
-        const rwanda = row.getAttribute('data-rwanda') || '';
-        const uganda = row.getAttribute('data-uganda') || '';
-        const tanzania = row.getAttribute('data-tanzania') || '';
-        const kenya = row.getAttribute('data-kenya') || '';
-
-        const matchesGuest = guestName.includes(guestQ);
-        const matchesAccom = accomQ === '' || rwanda.includes(accomQ) || uganda.includes(accomQ) || tanzania.includes(accomQ) || kenya.includes(accomQ);
-
-        let matchesCountry = true;
-        if (countryQ === 'rwanda') matchesCountry = rwanda !== '—' && rwanda !== '';
-        else if (countryQ === 'uganda') matchesCountry = uganda !== '—' && uganda !== '';
-        else if (countryQ === 'tanzania') matchesCountry = tanzania !== '—' && tanzania !== '';
-        else if (countryQ === 'kenya') matchesCountry = kenya !== '—' && kenya !== '' && !kenya.includes('excluded');
-
-        row.style.display = (matchesGuest && matchesAccom && matchesCountry) ? '' : 'none';
-      });
-    }
-
     function switchCountry(countryKey) {
       ['rwanda', 'uganda', 'tanzania', 'kenya'].forEach(c => {
         const btn = document.getElementById(`tab-${c}`);
@@ -799,30 +497,21 @@
     function renderCountryView(countryKey) {
       const data = countryData[countryKey];
       const activeSub = activeSubtabs[countryKey];
-      const rate = fxRates[currentFX];
-      const symbol = fxSymbols[currentFX];
 
-      let propertiesHtml = data.properties.map(p => {
-        let convertedCost = p.audPp > 0 ? `${symbol}${(p.audPp * rate).toLocaleString('en-US', {minimumFractionDigits:2, maximumFractionDigits:2})} ${currentFX}` : 'Pending Confirmation';
-        return `
-          <div class="glass-card p-4 sm:p-5 rounded-xl space-y-3">
-            <div class="flex justify-between items-start gap-2">
-              <h4 class="font-bold text-white text-xs sm:text-sm">${p.name}</h4>
-              ${p.link !== '#' ? `<a href="${p.link}" target="_blank" class="text-blue-400 hover:text-blue-300 text-[11px] sm:text-xs font-semibold flex items-center gap-1 bg-blue-500/10 px-2 py-1 rounded border border-blue-500/20"><i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Link</a>` : ''}
-            </div>
-            <div class="space-y-1">
-              <span class="text-[9px] sm:text-[10px] uppercase tracking-wider text-slate-400 font-bold">Assigned Guests:</span>
-              <ul class="text-xs text-slate-300 space-y-1 font-medium">
-                ${p.guests.map(g => `<li class="flex items-center gap-2"><i class="fa-solid fa-user-check text-emerald-400 text-[10px]"></i> ${g}</li>`).join('')}
-              </ul>
-            </div>
-            <div class="pt-2 border-t border-slate-800/80 flex justify-between items-center text-xs">
-              <span class="text-slate-400">Est. Price / Person:</span>
-              <span class="font-bold text-blue-400">${convertedCost}</span>
-            </div>
+      let propertiesHtml = data.properties.map(p => `
+        <div class="glass-card p-4 sm:p-5 rounded-xl space-y-3">
+          <div class="flex justify-between items-start gap-2">
+            <h4 class="font-bold text-white text-xs sm:text-sm">${p.name}</h4>
+            ${p.link !== '#' ? `<a href="${p.link}" target="_blank" class="text-blue-400 hover:text-blue-300 text-[11px] sm:text-xs font-semibold flex items-center gap-1 bg-blue-500/10 px-2 py-1 rounded border border-blue-500/20"><i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Link</a>` : ''}
           </div>
-        `;
-      }).join('');
+          <div class="space-y-1">
+            <span class="text-[9px] sm:text-[10px] uppercase tracking-wider text-slate-400 font-bold">Assigned Guests:</span>
+            <ul class="text-xs text-slate-300 space-y-1 font-medium">
+              ${p.guests.map(g => `<li class="flex items-center gap-2"><i class="fa-solid fa-user-check text-emerald-400 text-[10px]"></i> ${g}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      `).join('');
 
       let visasHtml = (data.visas || []).map(v => `
         <div class="glass-card p-4 rounded-xl border-l-4 border-emerald-400 space-y-1.5">
@@ -890,7 +579,7 @@
           <!-- SUBTABS SELECTOR -->
           <div class="flex overflow-x-auto gap-2 border-b border-slate-800 pb-2.5 no-scrollbar touch-pan-x">
             <button onclick="switchSubtab('${countryKey}', 'rooms')" class="px-3 sm:px-4 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${activeSub === 'rooms' ? 'subtab-active' : 'bg-slate-800/60 text-slate-400 hover:text-white'}">
-              <i class="fa-solid fa-bed mr-1.5"></i> Rooms
+              <i class="fa-solid fa-bed mr-1.5"></i> Accommodations
             </button>
             <button onclick="switchSubtab('${countryKey}', 'visas')" class="px-3 sm:px-4 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${activeSub === 'visas' ? 'subtab-active' : 'bg-slate-800/60 text-slate-400 hover:text-white'}">
               <i class="fa-solid fa-passport mr-1.5"></i> 🛂 Visas & Entry
@@ -913,65 +602,7 @@
       document.getElementById('country-content-container').innerHTML = html;
     }
 
-    function changeCurrency(curr) {
-      currentFX = curr;
-      document.getElementById('currencySelector').value = curr;
-      document.getElementById('currencySelectorMobile').value = curr;
-      renderMatrixView();
-      const activeTab = document.querySelector('.tab-active').id.replace('tab-', '');
-      renderCountryView(activeTab);
-    }
-
-    // TRAVELERS MODAL FUNCTIONS
-    let currentFilter = 'all';
-
-    function filterTravelers(filter) {
-      currentFilter = filter;
-      ['all', 'locked', 'pending'].forEach(f => {
-        const btn = document.getElementById(`filter-${f}`);
-        if(f === filter) btn.className = "px-2 py-1 rounded-md bg-blue-600 text-white";
-        else btn.className = "px-2 py-1 rounded-md text-slate-400 hover:text-white";
-      });
-      renderModalTravelers();
-    }
-
-    function renderModalTravelers() {
-      const listContainer = document.getElementById('modalTravelerList');
-      const filtered = activeTravelers.filter(t => {
-        if(currentFilter === 'locked') return t.ticket === 'locked';
-        if(currentFilter === 'pending') return t.ticket === 'pending';
-        return true;
-      });
-
-      listContainer.innerHTML = filtered.map(t => {
-        const badge = t.ticket === 'locked' 
-          ? `<span class="bg-emerald-500/20 text-emerald-400 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-emerald-500/30 flex items-center gap-1"><i class="fa-solid fa-lock text-[8px]"></i> Locked IN</span>`
-          : `<span class="bg-amber-500/20 text-amber-400 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-amber-500/30 flex items-center gap-1"><i class="fa-solid fa-clock text-[8px]"></i> Pending</span>`;
-
-        return `
-          <div class="bg-slate-900/90 border border-slate-800 p-3 rounded-xl flex justify-between items-center">
-            <div>
-              <h4 class="font-bold text-white text-xs sm:text-sm">${t.name}</h4>
-              <p class="text-[10px] text-slate-400 mt-0.5">${t.legs}</p>
-            </div>
-            ${badge}
-          </div>
-        `;
-      }).join('');
-    }
-
-    function openTravelersModal() {
-      document.getElementById('travelersModal').classList.remove('hidden');
-      renderModalTravelers();
-    }
-
-    function closeTravelersModal() {
-      document.getElementById('travelersModal').classList.add('hidden');
-    }
-
     // Initial Load
-    renderMatrixView();
-    setRosterView('cards');
     renderCountryView('rwanda');
   </script>
 </body>
