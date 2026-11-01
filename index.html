@@ -132,7 +132,7 @@
     <!-- COUNTRY CONTENT SECTION -->
     <div id="country-content-container"></div>
 
-    <!-- GALLERY SECTION -->
+    <!-- GALLERY SECTION WITH PREVIEW & LIGHTBOX MODAL -->
     <section class="glass-card p-4 sm:p-6 rounded-2xl space-y-6">
       <div class="border-b border-slate-800 pb-4">
         <h2 class="text-base sm:text-lg font-bold text-white flex items-center gap-2">
@@ -141,11 +141,13 @@
         <p class="text-[11px] sm:text-xs text-slate-400">Click any poster preview to open full-screen or download</p>
       </div>
 
+      <!-- ROW 1: ITINERARY GALLERY -->
       <div class="space-y-3">
         <div class="flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
           <h3 class="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-white">Main Itinerary Banners (Overview & 4 Countries)</h3>
         </div>
+
         <div class="flex overflow-x-auto gap-4 pb-3 no-scrollbar snap-x touch-pan-x">
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1JAhylvYEcmsoz_V3S7bJ9TPvJP0OFqKT=s1000', 'Master Overview Banner')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
@@ -154,6 +156,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Overview Banner</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1oP5eV94XK9nEke8p4YNBuvyWDI31huKd=s1000', 'Rwanda Itinerary')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/1oP5eV94XK9nEke8p4YNBuvyWDI31huKd=s1000" alt="Rwanda Itinerary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -161,6 +164,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Rwanda Itinerary</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1Pdrxjigm3jyIyirXOP0ML2q3Ey91G5Dx=s1000', 'Uganda Itinerary')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/1Pdrxjigm3jyIyirXOP0ML2q3Ey91G5Dx=s1000" alt="Uganda Itinerary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -168,6 +172,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Uganda Itinerary</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1IdNZCz20S2_dk0k7y3U1htLZM1XsP7b7=s1000', 'Tanzania Itinerary')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/1IdNZCz20S2_dk0k7y3U1htLZM1XsP7b7=s1000" alt="Tanzania Itinerary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -175,6 +180,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Tanzania Itinerary</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1EYAXBPvElsSqLud1Uc38dP4SlJgzu0kv=s1000', 'Kenya Itinerary')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/1EYAXBPvElsSqLud1Uc38dP4SlJgzu0kv=s1000" alt="Kenya Itinerary" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -185,11 +191,13 @@
         </div>
       </div>
 
+      <!-- ROW 2: SIDE QUESTS GALLERY -->
       <div class="space-y-3 pt-4 border-t border-slate-800">
         <div class="flex items-center gap-2">
           <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
           <h3 class="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-white">Side Quests & Activities Artwork</h3>
         </div>
+
         <div class="flex overflow-x-auto gap-4 pb-3 no-scrollbar snap-x touch-pan-x">
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1G32pJwmvK6B2WfLYdPkkycy7YFaci3_B=s1000', 'Rwanda Side Quest')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
@@ -198,6 +206,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Rwanda Side Quest</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1XclznwuFSPHyomiHogbPLfG-8aGfAkS5=s1000', 'Uganda Side Quest')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/1XclznwuFSPHyomiHogbPLfG-8aGfAkS5=s1000" alt="Uganda Side Quest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -205,6 +214,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Uganda Side Quest</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1zCWgQxLjUPAW3t7OI8CWUIq9B8354T0y=s1000', 'Tanzania Side Quest')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/1zCWgQxLjUPAW3t7OI8CWUIq9B8354T0y=s1000" alt="Tanzania Side Quest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -212,6 +222,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Tanzania Side Quest</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1A4-kf7BYndDo29-2Q7LDlXOBi3e8U2GV=s1000', 'Kenya Side Quest')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/1A4-kf7BYndDo29-2Q7LDlXOBi3e8U2GV=s1000" alt="Kenya Side Quest" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -219,6 +230,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Kenya Side Quest</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1kXmztfSpOktoAqWAL9WDfYHYLK26Tf7m=s1000', 'Go Kart Championship')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/1kXmztfSpOktoAqWAL9WDfYHYLK26Tf7m=s1000" alt="Go Kart Championship" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -226,6 +238,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Go Kart Championship</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/14gu6DTHEgSogI27s1oBOoc6FZ0HZ0Orw=s1000', 'Bowling Ballout')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/14gu6DTHEgSogI27s1oBOoc6FZ0HZ0Orw=s1000" alt="Bowling Ballout" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -233,6 +246,7 @@
             </div>
             <div class="p-3.5 space-y-1"><h5 class="font-bold text-xs text-white">Bowling Ballout</h5><p class="text-[10px] text-slate-400">Click to preview / view</p></div>
           </div>
+
           <div class="min-w-[260px] sm:min-w-[300px] bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden snap-start flex-shrink-0 group cursor-pointer" onclick="openPreview('https://lh3.googleusercontent.com/d/1vhpukjCVByFk7G4l0T1DO6sUs3cJSOM-=s1000', 'Fitness Challenge')">
             <div class="h-48 sm:h-56 relative overflow-hidden bg-slate-950">
               <img src="https://lh3.googleusercontent.com/d/1vhpukjCVByFk7G4l0T1DO6sUs3cJSOM-=s1000" alt="Fitness Challenge" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" crossorigin="anonymous">
@@ -242,40 +256,61 @@
           </div>
         </div>
       </div>
+
     </section>
+
   </main>
 
-  <!-- LIGHTBOX MODAL -->
+  <!-- IMAGE LIGHTBOX / PREVIEW MODAL -->
   <div id="imageModal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-md z-50 hidden flex items-center justify-center p-4">
     <div class="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
-      <button onclick="closePreview()" class="absolute -top-12 right-0 text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center text-xl shadow-lg border border-slate-700 z-10 transition-all"><i class="fa-solid fa-xmark"></i></button>
+      <button onclick="closePreview()" class="absolute -top-12 right-0 text-slate-300 hover:text-white bg-slate-800/80 hover:bg-slate-700 w-10 h-10 rounded-full flex items-center justify-center text-xl shadow-lg border border-slate-700 z-10 transition-all">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
       <h3 id="modalTitle" class="text-white font-bold text-sm sm:text-base mb-3 text-center"></h3>
+
       <div class="relative overflow-hidden rounded-2xl border border-slate-700 bg-slate-900 shadow-2xl max-h-[75vh] flex items-center justify-center w-full">
         <img id="modalImg" src="" alt="Poster Preview" class="max-h-[75vh] w-auto object-contain">
       </div>
+
       <div class="mt-4 flex gap-3">
-        <a id="downloadBtn" href="" target="_blank" download class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-blue-600/20 flex items-center gap-2 transition-all"><i class="fa-solid fa-download"></i> Download Image</a>
+        <a id="downloadBtn" href="" target="_blank" download class="bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm px-5 py-2.5 rounded-xl shadow-lg shadow-blue-600/20 flex items-center gap-2 transition-all">
+          <i class="fa-solid fa-download"></i> Download Image
+        </a>
       </div>
     </div>
   </div>
 
   <script>
+    // COUNTDOWN LOGIC (Target: July 6, 2027)
     function updateCountdown() {
       const now = new Date();
       const target = new Date('July 6, 2027 00:00:00');
+
       if (now < target) {
         let months = (target.getFullYear() - now.getFullYear()) * 12 + (target.getMonth() - now.getMonth());
         let tempDate = new Date(now.getFullYear(), now.getMonth() + months, now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds());
-        if (tempDate > target) { months--; tempDate = new Date(now.getFullYear(), now.getMonth() + months, now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds()); }
+        if (tempDate > target) {
+          months--;
+          tempDate = new Date(now.getFullYear(), now.getMonth() + months, now.getDate(), now.getHours(), now.getMinutes(), now.getSeconds());
+        }
+
         const remainingMs = target.getTime() - tempDate.getTime();
         const totalDays = Math.floor(remainingMs / (1000 * 60 * 60 * 24));
         const weeks = Math.floor(totalDays / 7);
         const days = totalDays % 7;
         const hours = Math.floor((remainingMs % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
         document.getElementById('cd-months').innerText = String(months).padStart(2, '0');
         document.getElementById('cd-weeks').innerText = String(weeks).padStart(2, '0');
         document.getElementById('cd-days').innerText = String(days).padStart(2, '0');
         document.getElementById('cd-hours').innerText = String(hours).padStart(2, '0');
+      } else {
+        document.getElementById('cd-months').innerText = '00';
+        document.getElementById('cd-weeks').innerText = '00';
+        document.getElementById('cd-days').innerText = '00';
+        document.getElementById('cd-hours').innerText = '00';
       }
     }
     setInterval(updateCountdown, 1000);
@@ -287,34 +322,224 @@
       document.getElementById('downloadBtn').href = imgUrl;
       document.getElementById('imageModal').classList.remove('hidden');
     }
+
     function closePreview() {
       document.getElementById('imageModal').classList.add('hidden');
       document.getElementById('modalImg').src = '';
     }
-    document.getElementById('imageModal').addEventListener('click', function(e) { if (e.target === this) closePreview(); });
+
+    document.getElementById('imageModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closePreview();
+      }
+    });
 
     const countryData = {
-      rwanda: { flag: "🇷🇼", name: "Rwanda (Kigali)", dates: "Jul 06 – Jul 09 (3 Nights)", statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400" },
-      uganda: { flag: "🇺🇬", name: "Uganda (Kampala)", dates: "Jul 09 – Jul 12 (3 Nights)", statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400" },
-      tanzania: { flag: "🇹🇿", name: "Tanzania (Dar es Salaam)", dates: "Jul 12 – Jul 15 (3 Nights)", statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400" },
-      kenya: { flag: "🇰🇪", name: "Kenya (Nairobi)", dates: "Jul 15 – Jul 20 (5 Nights)", statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400" }
+      rwanda: {
+        flag: "🇷🇼", name: "Rwanda (Kigali)", dates: "Jul 06 – Jul 09 (3 Nights)",
+        statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400",
+        visas: [
+          { title: "Commonwealth / AU / Francophonie Waiver", cost: "Exempt (Free)", link: "https://www.irembo.gov.rw/", desc: "Free 30-day visa on arrival for eligible passport holders." },
+          { title: "Standard Visa on Arrival", cost: "Standard Fee", link: "https://www.irembo.gov.rw/", desc: "Available at Kigali Airport for non-exempt visitors." }
+        ],
+        games: [
+          { title: "Kigali Go-Kart Time Trial 🏎️", category: "Go-Karting", points: "25 Pts", desc: "Round 1 qualifier time trials at Kigali Karting track." },
+          { title: "Summit Push-Up & Plank Challenge 🏋️‍♂️", category: "Fitness", points: "15 Pts", desc: "Bodyweight endurance contest at Fazenda Sengha lookout." },
+          { title: "Kigali Strike-Out Cup 🎳", category: "Bowling", points: "20 Pts", desc: "Late-night group bowling tournament in Kigali." }
+        ],
+        highlights: [
+          { title: "Kigali Genocide Memorial & Inema Arts", category: "Culture & History", desc: "A moving tribute to Rwanda's history followed by a tour of Kigali's top contemporary art gallery." },
+          { title: "Mount Kigali Adventure Park", category: "Adventure", desc: "Outdoor zip-lining, horseback riding, and archery at Fazenda Sengha." },
+          { title: "Decade Birthday Party 🥳", category: "Party", desc: "Decade-themed birthday bash celebrating ManLikeWales@40 at a premier Kigali venue." }
+        ],
+        itinerary: [
+          { day: "Day 1 (Jul 06)", title: "Arrival & Kigali Welcome", desc: "Arrive at Kigali International Airport. Check-in to residences. Welcome dinner and drinks in Kimihurura." },
+          { day: "Day 2", title: "Culture & Go-Kart Qualifier 🏎️", desc: "Morning visit to Genocide Memorial & Inema Arts. Afternoon Kigali Go-Kart Time Trial." },
+          { day: "Day 3", title: "Mount Kigali & Decade Party", desc: "Day activities at Mount Kigali. Evening Decade-Themed Birthday Party celebration." },
+          { day: "Day 4 (Jul 09)", title: "Departure to Kampala", desc: "Morning check-out and flight to Entebbe/Kampala, Uganda." }
+        ]
+      },
+      uganda: {
+        flag: "🇺🇬", name: "Uganda (Kampala)", dates: "Jul 09 – Jul 12 (3 Nights)",
+        statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400",
+        visas: [
+          { title: "Mandatory Single-Entry e-Visa", cost: "Advance Application Required", link: "https://visas.immigration.go.ug/", desc: "Must apply online 4–6 weeks in advance. No visas issued on arrival at Entebbe Airport." },
+          { title: "Yellow Fever Health Clearance", cost: "Required Health Record", link: "#", desc: "Physical Yellow Card strictly verified by health officials upon landing." }
+        ],
+        games: [
+          { title: "Kampala Go-Kart Grand Prix 🏎️", category: "Go-Karting", points: "35 Pts", desc: "Round 2 championship sprint race with podium trophies." },
+          { title: "Nile Quad Biking & Endurance Sprint 🏃‍♂️", category: "Fitness", points: "20 Pts", desc: "Jinja Nile bank obstacle sprint challenge." },
+          { title: "Kampala Masters Bowling Shootout 🎳", category: "Bowling", points: "20 Pts", desc: "10-pin elimination bowling battle in Kampala." }
+        ],
+        highlights: [
+          { title: "Jinja & Source of the Nile 🌊", category: "Excursion", desc: "Full-day trip to Jinja, quad biking along the Nile banks, and boat cruises." },
+          { title: "Kololo & Acacia Avenue Nightlife", category: "Nightlife", desc: "Experiencing Kampala's famously legendary club and lounge scene." }
+        ],
+        itinerary: [
+          { day: "Day 4 (Jul 09)", title: "Arrival & Kololo Check-In", desc: "Arrive from Kigali via Entebbe Airport. Check-in to Kololo apartments. Evening relaxed dinner." },
+          { day: "Day 5", title: "Kampala Go-Kart Grand Prix 🏎️", desc: "Afternoon Go-Karting championship race followed by group dinner and night out." },
+          { day: "Day 6", title: "Saturday Jinja Nile Excursion 🌊", desc: "Full-day trip to Jinja (Source of the Nile) with quad biking and boat tour." },
+          { day: "Day 7 (Jul 12)", title: "Departure to Dar es Salaam", desc: "Check-out and flight to Dar es Salaam, Tanzania." }
+        ]
+      },
+      tanzania: {
+        flag: "🇹🇿", name: "Tanzania (Dar es Salaam)", dates: "Jul 12 – Jul 15 (3 Nights)",
+        statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400",
+        visas: [
+          { title: "Tanzania Single-Entry e-Visa", cost: "Advance Online Application", link: "https://visa.immigration.go.tz/", desc: "Apply online 3–4 weeks prior to bypass arrival queues at Dar Airport." },
+          { title: "Mandatory Inbound Travel Insurance", cost: "Required Policy", link: "https://visittanzania.nicinsurance.co.tz/", desc: "Mandatory policy required for all visitors before crossing border control." }
+        ],
+        games: [
+          { title: "Dar Coastal Go-Kart Showdown 🏎️", category: "Go-Karting", points: "30 Pts", desc: "Round 3 coastal track showdown near Slipway." },
+          { title: "Mbudya Beach Olympics 🏝️", category: "Fitness", points: "25 Pts", desc: "Beach tug-of-war, sprint relay, and swimming race." },
+          { title: "Masaki Strike League 🎳", category: "Bowling", points: "20 Pts", desc: "Late afternoon bowling lounge tournament in Masaki." }
+        ],
+        highlights: [
+          { title: "Mbudya Island Beach Day 🏝️", category: "Island Trip", desc: "Private boat excursion to Mbudya Island for white sand beach relaxation and fresh seafood BBQs." },
+          { title: "AFCON Match Viewing Party ⚽", category: "Sports", desc: "Watching Africa Cup of Nations matches live at a premier sports lounge in Dar es Salaam." }
+        ],
+        itinerary: [
+          { day: "Day 7 (Jul 12)", title: "Arrival & Coastal Check-in", desc: "Arrive at Julius Nyerere Airport. Check-in to apartments. Fresh seafood dinner by the beach." },
+          { day: "Day 8", title: "Island Trip & Coastal Go-Karting 🏎️", desc: "Boat trip to Mbudya Island followed by late afternoon Go-Karting showdown." },
+          { day: "Day 9", title: "City Tour & AFCON Viewing ⚽", desc: "City market tour followed by AFCON match viewing party at a top lounge." },
+          { day: "Day 10 (Jul 15)", title: "Departure to Nairobi", desc: "Morning check-out and flight across the border to Nairobi, Kenya." }
+        ]
+      },
+      kenya: {
+        flag: "🇰🇪", name: "Kenya (Nairobi)", dates: "Jul 15 – Jul 20 (5 Nights)",
+        statusTag: "Confirmed Roster", statusClass: "bg-emerald-500/20 text-emerald-400",
+        visas: [
+          { title: "Kenya Electronic Travel Authorization (eTA)", cost: "Online Application", link: "https://www.etakenya.go.ke/", desc: "Apply online 7–10 days before landing in Nairobi." }
+        ],
+        games: [
+          { title: "Nairobi Go-Kart Grand Final 🏎️", category: "Go-Karting", points: "50 Pts (Double)", desc: "The ultimate tour championship decider at GP Karting / Two Rivers." },
+          { title: "Nairobi Fitness Decathlon 🏋️‍♂️", category: "Fitness", points: "30 Pts", desc: "Multi-event physical challenge at Pendo fitness center." },
+          { title: "Sarit Centre Bowling World Cup 🎳", category: "Bowling", points: "25 Pts", desc: "The grand tour bowling finals at Sarit Centre Lanes." }
+        ],
+        highlights: [
+          { title: "Nairobi National Park Safari 🦁", category: "Wild Life", desc: "Morning game drive safari inside Nairobi National Park with the city skyline in the background." },
+          { title: "Giraffe Centre & Carnivore Feast 🦒", category: "Excursion", desc: "Feeding endangered giraffes followed by a medieval meat feast." },
+          { title: "Grand 40th Birthday Finale 🎉", category: "Party", desc: "The epic tour closing party in Westlands." }
+        ],
+        itinerary: [
+          { day: "Day 10 (Jul 15)", title: "Arrival & Kilimani Check-In", desc: "Arrive in Nairobi. Check-in at Pendo Luxury Apartments. Welcome drinks at Alchemist." },
+          { day: "Day 11", title: "Giraffe Centre & Carnivore Feast 🦒", desc: "Visit Giraffe Centre followed by group feast at Carnivore Restaurant." },
+          { day: "Day 12", title: "Safari & Go-Kart Final Championship 🏎️", desc: "Morning safari drive followed by the Nairobi Go-Kart Final Championship." },
+          { day: "Day 13", title: "Grand 40th Finale Party 🎉", desc: "Decade Birthday Finale Celebration night out in Westlands." },
+          { day: "Day 14", title: "Maasai Market & Wind-Down", desc: "Souvenir shopping at Maasai Market and rooftop lounge winding down." },
+          { day: "Day 15 (Jul 20)", title: "Official Tour Conclusion", desc: "Check-out and international flights back home." }
+        ]
+      }
     };
+
+    let activeSubtabs = { rwanda: 'visas', uganda: 'visas', tanzania: 'visas', kenya: 'visas' };
+
     function switchCountry(countryKey) {
       ['rwanda', 'uganda', 'tanzania', 'kenya'].forEach(c => {
-        document.getElementById(`tab-${c}`).className = (c === countryKey) 
+        const btn = document.getElementById(`tab-${c}`);
+        btn.className = (c === countryKey) 
           ? 'tab-active py-3 sm:py-4 px-1 font-bold text-xs sm:text-sm whitespace-nowrap flex items-center gap-1.5 sm:gap-2 transition-all'
           : 'text-slate-400 hover:text-slate-200 py-3 sm:py-4 px-1 font-bold text-xs sm:text-sm whitespace-nowrap flex items-center gap-1.5 sm:gap-2 transition-all';
       });
-      document.getElementById('country-content-container').innerHTML = `
+      renderCountryView(countryKey);
+    }
+
+    function switchSubtab(countryKey, subtab) {
+      activeSubtabs[countryKey] = subtab;
+      renderCountryView(countryKey);
+    }
+
+    function renderCountryView(countryKey) {
+      const data = countryData[countryKey];
+      const activeSub = activeSubtabs[countryKey];
+
+      let visasHtml = (data.visas || []).map(v => `
+        <div class="glass-card p-4 rounded-xl border-l-4 border-emerald-400 space-y-1.5">
+          <div class="flex justify-between items-center">
+            <h5 class="text-xs sm:text-sm font-bold text-white">${v.title}</h5>
+            <span class="text-xs font-extrabold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20">${v.cost}</span>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed">${v.desc}</p>
+          ${v.link !== '#' ? `<a href="${v.link}" target="_blank" class="text-blue-400 hover:text-blue-300 text-[11px] font-semibold inline-flex items-center gap-1 pt-1"><i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i> Apply Official Portal</a>` : ''}
+        </div>
+      `).join('');
+
+      let gamesHtml = data.games.map(item => `
+        <div class="glass-card p-4 rounded-xl border-l-4 border-indigo-500 space-y-1">
+          <div class="flex justify-between items-center">
+            <span class="text-[9px] sm:text-[10px] font-extrabold text-indigo-400 uppercase bg-indigo-500/10 px-2 py-0.5 rounded-full border border-indigo-500/20">${item.category}</span>
+            <span class="text-xs font-extrabold text-amber-400"><i class="fa-solid fa-trophy text-[10px]"></i> ${item.points}</span>
+          </div>
+          <h5 class="text-xs sm:text-sm font-bold text-white mt-1">${item.title}</h5>
+          <p class="text-xs text-slate-300 leading-relaxed">${item.desc}</p>
+        </div>
+      `).join('');
+
+      let highlightsHtml = data.highlights.map(item => `
+        <div class="glass-card p-4 rounded-xl border-l-4 border-amber-400 space-y-1">
+          <div class="flex justify-between items-center">
+            <span class="text-[9px] sm:text-[10px] font-extrabold text-amber-400 uppercase bg-amber-400/10 px-2 py-0.5 rounded-full border border-amber-400/20">${item.category}</span>
+          </div>
+          <h5 class="text-xs sm:text-sm font-bold text-white mt-1">${item.title}</h5>
+          <p class="text-xs text-slate-300 leading-relaxed">${item.desc}</p>
+        </div>
+      `).join('');
+
+      let itineraryHtml = data.itinerary.map(item => `
+        <div class="glass-card p-4 rounded-xl border-l-4 border-blue-500 space-y-1">
+          <div class="flex justify-between items-center">
+            <span class="text-xs font-bold text-blue-400 uppercase">${item.day}</span>
+          </div>
+          <h5 class="text-xs sm:text-sm font-bold text-white">${item.title}</h5>
+          <p class="text-xs text-slate-300 leading-relaxed">${item.desc}</p>
+        </div>
+      `).join('');
+
+      let activeContent = '';
+      if(activeSub === 'visas') activeContent = `<div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">${visasHtml}</div>`;
+      else if(activeSub === 'games') activeContent = `<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">${gamesHtml}</div>`;
+      else if(activeSub === 'highlights') activeContent = `<div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">${highlightsHtml}</div>`;
+      else if(activeSub === 'itinerary') activeContent = `<div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">${itineraryHtml}</div>`;
+
+      const html = `
         <div class="space-y-4 sm:space-y-6">
           <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 bg-slate-900/60 p-3.5 sm:p-4 rounded-2xl border border-slate-800">
-            <div><h2 class="text-lg sm:text-xl font-black text-white flex items-center gap-2">${countryData[countryKey].flag} ${countryData[countryKey].name}</h2><p class="text-xs text-slate-400 mt-0.5">${countryData[countryKey].dates}</p></div>
-            <span class="${countryData[countryKey].statusClass} text-xs font-extrabold px-3 py-1 rounded-full border border-current">${countryData[countryKey].statusTag}</span>
+            <div>
+              <h2 class="text-lg sm:text-xl font-black text-white flex items-center gap-2">
+                ${data.flag} ${data.name}
+              </h2>
+              <p class="text-xs text-slate-400 mt-0.5">${data.dates}</p>
+            </div>
+            <span class="${data.statusClass} text-xs font-extrabold px-3 py-1 rounded-full border border-current">
+              ${data.statusTag}
+            </span>
           </div>
+
+          <!-- SUBTABS SELECTOR -->
+          <div class="flex overflow-x-auto gap-2 border-b border-slate-800 pb-2.5 no-scrollbar touch-pan-x">
+            <button onclick="switchSubtab('${countryKey}', 'visas')" class="px-3 sm:px-4 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${activeSub === 'visas' ? 'subtab-active' : 'bg-slate-800/60 text-slate-400 hover:text-white'}">
+              <i class="fa-solid fa-passport mr-1.5"></i> 🛂 Visas & Entry
+            </button>
+            <button onclick="switchSubtab('${countryKey}', 'games')" class="px-3 sm:px-4 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${activeSub === 'games' ? 'subtab-active' : 'bg-slate-800/60 text-slate-400 hover:text-white'}">
+              <i class="fa-solid fa-gamepad mr-1.5"></i> Games
+            </button>
+            <button onclick="switchSubtab('${countryKey}', 'highlights')" class="px-3 sm:px-4 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${activeSub === 'highlights' ? 'subtab-active' : 'bg-slate-800/60 text-slate-400 hover:text-white'}">
+              <i class="fa-solid fa-star mr-1.5"></i> Highlights
+            </button>
+            <button onclick="switchSubtab('${countryKey}', 'itinerary')" class="px-3 sm:px-4 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${activeSub === 'itinerary' ? 'subtab-active' : 'bg-slate-800/60 text-slate-400 hover:text-white'}">
+              <i class="fa-solid fa-calendar-check mr-1.5"></i> Itinerary
+            </button>
+          </div>
+
+          ${activeContent}
         </div>
       `;
+
+      document.getElementById('country-content-container').innerHTML = html;
     }
-    switchCountry('rwanda');
+
+    // Initial Load
+    renderCountryView('rwanda');
   </script>
 </body>
 </html>
